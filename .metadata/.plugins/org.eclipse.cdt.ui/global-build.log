@@ -1,0 +1,7 @@
+17:06:40 **** Incremental Build of configuration Debug for project SPI_G491_53L9 ****
+make -j8 all 
+arm-none-eabi-size  SPI_G491_53L9.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125084	    180	  14012	 139276	  2200c	SPI_G491_53L9.elf
+Finished building: default.size.stdout
+ 
