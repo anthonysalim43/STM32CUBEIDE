@@ -1,0 +1,8 @@
+../Drivers/BSP/53L8A1/53L8a1_ranging_sensor.c:64:9:VL53L8A1_RANGING_SENSOR_GetCapabilities	3
+../Drivers/BSP/53L8A1/53L8a1_ranging_sensor.c:89:9:VL53L8A1_RANGING_SENSOR_Start	3
+../Drivers/BSP/53L8A1/53L8a1_ranging_sensor.c:114:9:VL53L8A1_RANGING_SENSOR_ConfigProfile	3
+../Drivers/BSP/53L8A1/53L8a1_ranging_sensor.c:140:9:VL53L8A1_RANGING_SENSOR_ReadID	3
+../Drivers/BSP/53L8A1/53L8a1_ranging_sensor.c:174:9:VL53L8A1_RANGING_SENSOR_Init	2
+../Drivers/BSP/53L8A1/53L8a1_ranging_sensor.c:207:16:VL53L8CX_Probe	6
+../Drivers/BSP/53L8A1/53L8a1_ranging_sensor.c:282:9:VL53L8A1_RANGING_SENSOR_GetDistance	3
+../Drivers/BSP/53L8A1/53L8a1_ranging_sensor.c:307:9:VL53L8A1_RANGING_SENSOR_Stop	3

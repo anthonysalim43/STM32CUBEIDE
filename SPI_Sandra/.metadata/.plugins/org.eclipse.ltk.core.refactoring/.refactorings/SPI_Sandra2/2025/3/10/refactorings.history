@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SPI_Sandra2/SPI_Sandra3.ioc&apos; to &apos;SPI_Sandra2.ioc&apos;" description="Rename resource &apos;SPI_Sandra3.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="SPI_Sandra3.ioc" name="SPI_Sandra2.ioc" stamp="1741207917947" updateReferences="true"/>
+</session>

@@ -68,7 +68,7 @@ main-build: G491_53L8.elf secondary-outputs
 
 # Tool invocations
 G491_53L8.elf G491_53L8.map: $(OBJS) $(USER_OBJS) C:\Users\AS000053\Desktop\Workspace_STM32\F401_53L8\G491_53L8\STM32G491RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "G491_53L8.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\AS000053\Desktop\Workspace_STM32\F401_53L8\G491_53L8\STM32G491RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="G491_53L8.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -o "G491_53L8.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\AS000053\Desktop\Workspace_STM32\F401_53L8\G491_53L8\STM32G491RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="G491_53L8.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

@@ -1,0 +1,17 @@
+../Drivers/BSP/Components/VL53L8CX_ULD_API/vl53l8cx.c:94:9:VL53L8CX_RegisterBusIO	24	static
+../Drivers/BSP/Components/VL53L8CX_ULD_API/vl53l8cx.c:135:9:VL53L8CX_Init	24	static
+../Drivers/BSP/Components/VL53L8CX_ULD_API/vl53l8cx.c:170:9:VL53L8CX_DeInit	24	static
+../Drivers/BSP/Components/VL53L8CX_ULD_API/vl53l8cx.c:206:9:VL53L8CX_ReadID	24	static
+../Drivers/BSP/Components/VL53L8CX_ULD_API/vl53l8cx.c:246:9:VL53L8CX_GetCapabilities	24	static
+../Drivers/BSP/Components/VL53L8CX_ULD_API/vl53l8cx.c:273:9:VL53L8CX_ConfigProfile	32	static
+../Drivers/BSP/Components/VL53L8CX_ULD_API/vl53l8cx.c:357:9:VL53L8CX_ConfigROI	16	static
+../Drivers/BSP/Components/VL53L8CX_ULD_API/vl53l8cx.c:370:9:VL53L8CX_ConfigIT	24	static
+../Drivers/BSP/Components/VL53L8CX_ULD_API/vl53l8cx.c:460:9:VL53L8CX_GetDistance	24	static
+../Drivers/BSP/Components/VL53L8CX_ULD_API/vl53l8cx.c:503:9:VL53L8CX_Start	24	static
+../Drivers/BSP/Components/VL53L8CX_ULD_API/vl53l8cx.c:557:9:VL53L8CX_Stop	24	static
+../Drivers/BSP/Components/VL53L8CX_ULD_API/vl53l8cx.c:590:9:VL53L8CX_SetPowerMode	24	static
+../Drivers/BSP/Components/VL53L8CX_ULD_API/vl53l8cx.c:621:9:VL53L8CX_GetPowerMode	24	static
+../Drivers/BSP/Components/VL53L8CX_ULD_API/vl53l8cx.c:652:9:VL53L8CX_XTalkCalibration	24	static
+../Drivers/BSP/Components/VL53L8CX_ULD_API/vl53l8cx.c:676:16:vl53l8cx_poll_for_measurement	32	static
+../Drivers/BSP/Components/VL53L8CX_ULD_API/vl53l8cx.c:711:16:vl53l8cx_get_result	32	static
+../Drivers/BSP/Components/VL53L8CX_ULD_API/vl53l8cx.c:778:16:vl53l8cx_map_target_status	24	static

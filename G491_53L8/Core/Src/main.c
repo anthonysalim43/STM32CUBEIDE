@@ -19,10 +19,11 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "app_tof.h"
-
+#include "vl53l8cx_api.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+VL53L8CX_Configuration 	Dev;
+uint8_t isAlive;
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -68,7 +69,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+ float   start_time2,end_time2,frame_frequency2=0;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -92,6 +93,10 @@ int main(void)
   MX_TOF_Init();
   /* USER CODE BEGIN 2 */
 
+
+
+
+
   /* USER CODE END 2 */
 
   /* Initialize led */
@@ -111,15 +116,31 @@ int main(void)
     Error_Handler();
   }
 
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
 
+HAL_Delay(2000);
+/*
+	  printf("hooooooooooo");
+	  uint8_t status1 = vl53l8cx_is_alive(&Dev, &isAlive);
+	//     if (!isAlive) {
+	         printf("VL53L8CX with SPI communication not detected, error: %d\n", status1);
+	 //        return 255;
+	   //  }
+	     printf("VL53L8CX is alive!\n");
+
+	     //HAL_Delay(5000);
     /* USER CODE END WHILE */
 
-  MX_TOF_Process();
-    /* USER CODE BEGIN 3 */
+		//  printf("haaaaaa");
+	 MX_TOF_Process();
+
+
+	//  printf("hiiiiiii");
+	  /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }

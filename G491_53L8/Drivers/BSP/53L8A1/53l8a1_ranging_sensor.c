@@ -483,40 +483,50 @@ static int32_t VL53L8CX_Probe(uint32_t Instance)
   IOCtx.WriteReg    = VL53L8A1_I2C_WRITEREG;
   IOCtx.ReadReg     = VL53L8A1_I2C_READREG;
   IOCtx.GetTick     = VL53L8A1_GETTICK;
-
+  printf("hiiiiiii");
   if (VL53L8CX_RegisterBusIO(&(VL53L8CXObj[Instance]), &IOCtx) != VL53L8CX_OK)
   {
+	  printf("hooooooi");
     ret = BSP_ERROR_COMPONENT_FAILURE;
   }
   else
   {
+	  printf("haaaaaaaaa");
     VL53L8A1_RANGING_SENSOR_Drv = (RANGING_SENSOR_Drv_t *) &VL53L8CX_RANGING_SENSOR_Driver;
     VL53L8A1_RANGING_SENSOR_CompObj[Instance] = &(VL53L8CXObj[Instance]);
 
-    if (VL53L8CX_ReadID(&(VL53L8CXObj[Instance]), &id) != VL53L8CX_OK)
-    {
-      ret = BSP_ERROR_COMPONENT_FAILURE;
-    }
-    else if (id != VL53L8CX_ID)
-    {
-      ret = BSP_ERROR_UNKNOWN_COMPONENT;
-    }
-    else if (VL53L8A1_RANGING_SENSOR_Drv->Init(VL53L8A1_RANGING_SENSOR_CompObj[Instance]) != VL53L8CX_OK)
-    {
-      ret = BSP_ERROR_COMPONENT_FAILURE;
-    }
-    else if (VL53L8A1_RANGING_SENSOR_Drv->GetCapabilities(VL53L8A1_RANGING_SENSOR_CompObj[Instance],
-                                                          &VL53L8A1_RANGING_SENSOR_Cap) != VL53L8CX_OK)
-    {
-      ret = BSP_ERROR_COMPONENT_FAILURE;
-    }
-    else
-    {
-      ret = BSP_ERROR_NONE;
-    }
-  }
 
-  return ret;
+    printf("hillllllllll");
+
+   // while(1);
+      if (VL53L8CX_ReadID(&(VL53L8CXObj[Instance]), &id) != VL53L8CX_OK)
+     {
+     	printf("Not ssuccesfull communication");
+       ret = BSP_ERROR_COMPONENT_FAILURE;
+     }
+
+
+    else if (id != VL53L8CX_ID)
+     {
+       ret = BSP_ERROR_UNKNOWN_COMPONENT;
+     }
+     else if (VL53L8A1_RANGING_SENSOR_Drv->Init(VL53L8A1_RANGING_SENSOR_CompObj[Instance]) != VL53L8CX_OK)
+     {
+       ret = BSP_ERROR_COMPONENT_FAILURE;
+     }
+     else if (VL53L8A1_RANGING_SENSOR_Drv->GetCapabilities(VL53L8A1_RANGING_SENSOR_CompObj[Instance],
+                                                           &VL53L8A1_RANGING_SENSOR_Cap) != VL53L8CX_OK)
+     {
+       ret = BSP_ERROR_COMPONENT_FAILURE;
+     }
+     else
+     {
+       ret = BSP_ERROR_NONE;
+     }
+   }
+
+   return ret;
+
 }
 
 /**

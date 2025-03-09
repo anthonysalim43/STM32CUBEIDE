@@ -109,6 +109,7 @@ static void MX_53L8A1_SimpleRanging_Init(void)
   HAL_GPIO_WritePin(VL53L8A1_LPn_C_PORT, VL53L8A1_LPn_C_PIN, GPIO_PIN_RESET);
   HAL_Delay(2);
   HAL_GPIO_WritePin(VL53L8A1_LPn_C_PORT, VL53L8A1_LPn_C_PIN, GPIO_PIN_SET);
+
   HAL_Delay(2);
 
   printf("\033[2H\033[2J");

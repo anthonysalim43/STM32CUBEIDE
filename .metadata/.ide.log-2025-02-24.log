@@ -1,0 +1,3 @@
+2025-02-25 15:15:32,091 [INFO] WebApp:187 - Connection restablished
+2025-02-25 15:15:32,810 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2025-02-25 15:15:32,811 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 

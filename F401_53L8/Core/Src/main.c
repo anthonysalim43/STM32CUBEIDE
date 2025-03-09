@@ -94,12 +94,26 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
+
+
   while (1)
   {
     /* USER CODE END WHILE */
 
   MX_TOF_Process();
-    /* USER CODE BEGIN 3 */
+
+  /* USER CODE BEGIN 3 */
+
+
+  status = vl53l8cx_is_alive(&Dev, &isAlive);
+      	if(!isAlive)
+      	{
+      		printf("VL53L8CX with SPI communication not detected, error : %d\n", status);
+      		return 255;
+      	}
+
+
   }
   /* USER CODE END 3 */
 }
